@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BULB</title>
+        <style>
+            #bulb{
+                width: 300px;
+                height: 300px;
+                background-color: gray;
+                border-radius: 300px;;
+            }
+        </style>
+        <script>
+            //We should check if the page is loadded
+            function anil(){
+                document.getElementById("myheading").innerHTML = 'My Changed Heading';
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1 id="myheading">My Heading</h1>
+
+        <h2 id="myheading2">OKLABS</h2>
+        <h2 id="myheading3">OKLABS3</h2>
+
+        <div id="bulb"></div>
+        <button onclick="on()">On</button>
+        <button onclick="off()">OFF</button>
+
+        <button onclick="anil()">Change my Heading</button>
+
+        <button onclick="changeHeading2()">Change my Heading 2</button>
+        <button onclick="changeHeading3()">Change my Heading 3</button>
+
+        <script>
+
+            let bulk = document.getElementById("bulb");
+
+            function on(){
+                bulk.style.backgroundColor = 'yellow';
+                //alert('on');
+            }
+            function off(){
+                bulk.style.backgroundColor = 'gray';
+                //alert('on');
+            }
+        </script>
+        <script src="./js/script.js"></script>
+        <script src="script3.js"></script>
+    </body>
+</html>
